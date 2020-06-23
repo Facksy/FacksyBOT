@@ -12,6 +12,9 @@ client.on('message', message => {
     if (message.content === 'pac is') {
     	message.channel.send("the gayest camel on earth")
   	}
+    if (message.content == 'Non') {
+    	message.channel.send("tzaag")
+  	}
 });
 
 client.login(process.env.BOT_TOKEN);
