@@ -8,7 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.id == '239554589072949249') {  //239554589072949249  701806342981025853
     	message.reply('tgg');
-        message.channels.get('711204646860881940').send('hobo');
+        client.channels.get('711204646860881940').send(message.content);
         message.delete();
     }
 });
