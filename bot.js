@@ -6,18 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
-  	}
-    if (message.content === 'pac is') {
-    	message.channel.send("the gayest camel on earth")
-  	}
-    if (message.content == 'non') {
-    	message.channel.send("tg")
-  	}
-    if (message.content == 'Non') {
-    	message.channel.send("tg")
-  	}
+    if (message.author === '<@!701806342981025853>') {
+    	message.reply('tg');
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
