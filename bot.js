@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.id == '701806342981025853') {  //239554589072949249  701806342981025853
-    	message.reply('tg');
+    	//message.reply('tg');
         client.channels.get('711204646860881940').send(message.content);
         message.delete();
     }
