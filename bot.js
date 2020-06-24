@@ -8,6 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.id == '701806342981025853') {
     	message.reply('tg');
+        message.delete();
     }
 });
 
