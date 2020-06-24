@@ -14,7 +14,7 @@ client.on('message', message => {
     
     if (message.author.id != client.user.id){
         message.delete();
-        message.channel.send(message.author);
+        message.channel.send(message.author.username);
     }
     client.channels.get('711204646860881940').send(message.content);
 });
