@@ -14,8 +14,12 @@ client.on('message', message => {
     
     if (message.author.id != client.user.id){
         message.delete();
-        message.channel.send(message.author.username + " a dit: " + message.content);
-        client.channels.get('711204646860881940').send(message.content);
+        if(message.author.id == '701806342981025853' && Math.floor(Math.random() * Math.floor(5) == 1){
+           message.channel.send("DallasTHX0512 a dit: je suis ton fidèle esclave");
+        }
+       else 
+           message.channel.send(message.author.username + " a dit: " + message.content);
+       // client.channels.get('711204646860881940').send(message.content);
     }
     
 });
