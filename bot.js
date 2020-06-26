@@ -16,6 +16,8 @@ client.on('message', message => {
             setTimeout(myFunction, 3000);
             if(rand == 1)
                 message.channel.send("DallasTHX0512 a dit: je suis ton fidèle esclave");
+            else
+                message.channel.send(message.author.username + " a dit: " + message.content);
         }
         else
             message.channel.send(message.author.username + " a dit: " + message.content);
