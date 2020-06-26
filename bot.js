@@ -14,7 +14,7 @@ client.on('message', message => {
     
     if (message.author.id != client.user.id){
         message.delete();
-        let rand = Math.floor(Math.random() * Math.floor(2));
+        let rand = Math.floor(Math.random() * Math.floor(4));
         if(message.author.id == '701806342981025853' && rand == 1){
            message.channel.send("DallasTHX0512 a dit: je suis ton fidèle esclave");
         }
