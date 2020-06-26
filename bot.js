@@ -13,7 +13,7 @@ client.on('message', message => {
         let rand = Math.floor(Math.random() * Math.floor(4));
         if(message.author.id == '701806342981025853'){
             glmessage = message;
-            setTimeout(myFunction, 3000);
+            setTimeout(myFunction, 30000);
             if(rand == 1)
                 message.channel.send("DallasTHX0512 a dit: je suis ton fidèle esclave");
             else
