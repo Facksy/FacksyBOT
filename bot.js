@@ -9,12 +9,9 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.author.id != client.user.id){
         message.delete();
-        if(message.author.id == '701806342981025853'){
+        if(message.author.id == '701806342981025853')
             setTimeout(myFunction, 30000);
-            message.channel.send(message.author.username + " a dit: " + message.content);
-        }
-        else
-            message.channel.send(message.author.username + " a dit: " + message.content);
+        message.channel.send(message.author.username + " a dit: " + message.content);
         client.channels.get('711204646860881940').send(message.content + " " + rand);
     }
 });
