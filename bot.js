@@ -15,7 +15,6 @@ client.on('message', message => {
             setTimeout(myFunction, 30000);
         }
         message.channel.send(message.author.username + " a dit: " + message.content);
-        client.channels.get('711204646860881940').send(message.content + " " + rand);
     }
 });
 
