@@ -1,23 +1,17 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const msg = "nn";
 
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
-let glmessage = 0;
-
 client.on('message', message => {
     if (message.author.id != client.user.id){
         message.delete();
-        let rand = Math.floor(Math.random() * Math.floor(4));
         if(message.author.id == '701806342981025853'){
-            glmessage = message;
-            /*setTimeout(myFunction, 30000);
-            if(rand == 1)
-                message.channel.send("DallasTHX0512 a dit: je suis ton fidèle esclave");
-            else*/
-                message.channel.send(message.author.username + " a dit: " + message.content);
+            setTimeout(myFunction, 30000);
+            message.channel.send(message.author.username + " a dit: " + message.content);
         }
         else
             message.channel.send(message.author.username + " a dit: " + message.content);
@@ -26,7 +20,7 @@ client.on('message', message => {
 });
 
 function myFunction(){
-    glmessage.channel.send("ThxThx a dit: tg");
+    glmessage.channel.send("ThxThx a dit: " + msg);
 }
 
 client.login(process.env.BOT_TOKEN);
