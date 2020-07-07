@@ -12,7 +12,7 @@ client.on('message', message => {
         message.delete();
         if(message.author.id == '701806342981025853'){
             msssg = message;
-            setTimeout(myFunction, 30000);
+            //setTimeout(myFunction, 30000);
         }
         message.channel.send(message.author.username + " a dit: " + message.content);
     }
