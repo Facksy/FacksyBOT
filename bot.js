@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const msg = "chut";
+const msg = "tg";
 let msssg = 0;
 let toggle = true;
+let maitre = false;
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -17,13 +18,23 @@ client.on('message', message => {
             else
                 message.channel.send("toggled to false");
         }
+        if(message.content === "!maitre"){
+            maitre = !maitre;
+            if(maitre)
+                message.channel.send("toggled to true");
+            else
+                message.channel.send("toggled to false");
+        }
         message.delete();
         if(message.author.id == '701806342981025853'){
             msssg = message;
             if(toggle)
                 setTimeout(myFunction, 30000);
+            if(maitre)
+                message.channel.send(message.author.username + " a dit: Maitre, " + message.content);
         }
-        message.channel.send(message.author.username + " a dit: " + message.content);
+        else
+            message.channel.send(message.author.username + " a dit: " + message.content);
     }
 });
 
