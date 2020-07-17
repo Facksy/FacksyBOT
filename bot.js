@@ -32,6 +32,8 @@ client.on('message', message => {
                 setTimeout(myFunction, 30000);
             if(maitre)
                 message.channel.send(message.author.username + " a dit: Maitre, " + message.content);
+            else
+                message.channel.send(message.author.username + " a dit: " + message.content);
         }
         else
             message.channel.send(message.author.username + " a dit: " + message.content);
