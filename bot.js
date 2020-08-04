@@ -10,6 +10,12 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    if(message.content === "!nword"){
+        message.channel.send("nigga nigga");
+    }
+});
+
+client.on('azeaze', message => {
     if (message.author.id != client.user.id){
         if(message.content === "!toggle"){
             toggle = !toggle;
