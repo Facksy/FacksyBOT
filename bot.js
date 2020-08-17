@@ -9,13 +9,13 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('message', message => {
+client.on('aaa', message => {
     if(message.content === "!nword"){
         message.channel.send("nigga nigga");
     }
 });
 
-client.on('azeaze', message => {
+client.on('message', message => {
     if (message.author.id != client.user.id){
         if(message.content === "!toggle"){
             toggle = !toggle;
